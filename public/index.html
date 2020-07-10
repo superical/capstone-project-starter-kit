@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>My Lovely App</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Lovely App" />
+    <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png" />
+
+    <meta name="description" content="My lovely new app" />
+
+    <meta name="theme-color" content="#2F3BA2" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center">My Website</a>
+          <button id="butInstall" aria-label="Install" hidden></button>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="container">
+      <h1>
+        Hello!
+      </h1>
+      <p>
+        I'm your cool new webpage. Made with <a href="https://www.glitch.com">Glitch</a>!
+      </p>
+    </div>
+
+    <script src="/scripts/register-sw.js"></script>
+    <script src="/scripts/init.js"></script>
+    <script src="/scripts/client.js"></script>
+    <script src="/scripts/install.js"></script>
+  </body>
+</html>
