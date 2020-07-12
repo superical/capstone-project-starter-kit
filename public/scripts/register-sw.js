@@ -1,11 +1,14 @@
 /**
- * If you want to enable PWA offline capabilities and experience,
- * please make sure you set window.DISABLE_SERVICE_WORKER = false
+ * If you want to "enable" PWA offline and caching capabilities,
+ * please make sure you set window.ENABLE_SERVICE_WORKER = true
+ *
+ * If you want to "disable" PWA offline and caching capabilities,
+ * please make sure you set window.ENABLE_SERVICE_WORKER = false
  */
-window.DISABLE_SERVICE_WORKER = true;     // Set this to false to register service worker
+window.ENABLE_SERVICE_WORKER = true;     // Set this to true to register service worker
 
 if ('serviceWorker' in navigator) {
-  if (window.DISABLE_SERVICE_WORKER) {
+  if (!window.ENABLE_SERVICE_WORKER) {
     navigator.serviceWorker.getRegistrations().then(function (registrations) {
       for (let registration of registrations) {
         registration.unregister();
