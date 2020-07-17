@@ -10,7 +10,9 @@ body {
     padding: 0;
 }
 
-/* Install button from PWA CODELAB */
+/**
+* Install button from PWA CODELAB
+**/
 #butInstall {
     background: url(/images/install.svg) center center no-repeat;
     float: right;
@@ -23,6 +25,9 @@ body {
     opacity: 80%;
 }
 
+/**
+* Styles for Site Layout
+**/
 .container {
     max-width: 100%;
 }
@@ -32,3 +37,7 @@ body {
         width: 75%;
     }
 }
+
+/**
+* Your Website CSS Styles
+**/
