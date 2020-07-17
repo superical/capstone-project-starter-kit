@@ -28,33 +28,41 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo center">My Website</a>
-          <button id="butInstall" aria-label="Install" hidden></button>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div class="main-container">
+      <!-- Start of Navigation Bar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">My Website</a>
+            <button id="butInstall" aria-label="Install" hidden></button>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="container">
-      <h1>
-        Hello!
-      </h1>
-      <p>
-        I'm your cool new webpage. Made with <a href="https://www.glitch.com">Glitch</a>!
-      </p>
+      <!-- Navigation Bar on Mobile Devices -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <!-- End of Navigation Bar -->
+
+      <!-- Start of Site Content -->
+      <div class="container">
+        <h1>
+          Hello!
+        </h1>
+        <p>
+          I'm your cool new webpage. Made with <a href="https://www.glitch.com">Glitch</a>!
+        </p>
+      </div>
+      <!-- End of Site Content -->
     </div>
 
     <script src="/scripts/register-sw.js"></script>
